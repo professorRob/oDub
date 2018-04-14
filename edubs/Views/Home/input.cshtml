@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "input";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+<p style=color:red>****(if box is checked generates another txtbox and textarea and check box to repeat as needed)****</p>
+    <form>
+    <table class="OverWatch">
+        <tr>
+            <td>
+                IMG: <input type="text" />
+                     <input type="file"/><br /><br />
+            </td>
+       </tr>
+        
+       <tr>
+           <td>
+Name: <input type="text" /><br /><br />
+        </td>
+       </tr>
+        
+    <tr>
+        <td>
+Type: <select>
+       <option selected disabled>Type</option>
+       <option>Offense</option>
+       <option>Defense</option>
+       <option>Tank</option>
+       <option>Support</option>
+      </select><br /><br />
+        </td>
+    </tr>
+        
+    <tr>
+        <td id="AddPassive">
+Passive  Name: <br /><input type="text" /><br /><br />
+Passive Description:<br /><textarea></textarea><br />
+<label id="PassiveLabel">add another passive?</label><input value="Add" type="button" id="InputPassive" />
+        </td>
+    </tr>
+     
+        <tr>
+            <td id="AddWeapon">
+Weapon  Name: <br /><input type="text" /><br /><br />
+Weapon Description:<br /> <textarea></textarea><br />
+<label id="WeaponLabel">add another Weapon?</label><input value="Add" type="button" id="InputWeapon" /><br />
+    </td>
+        </tr>
+    
+        <tr>
+            <td id="AddAbility">
+ability  Name: <br /><input type="text" /><br />
+ability Description:<br /> <textarea></textarea><br />
+<label id="AbilityLabel">Add Another ability</label><input value="Add" type="button" id="InputAbility"/><br />
+            </td>
+        </tr>
+    
+        <tr>
+            <td id="AddUltimate">
+Ultimate  Name: <br /><input type="text" /><br />
+Ultimate Description:<br /> <textarea></textarea><br />
+<label id="UltimateLabel">add another ultimate?</label> <input value="Add" type="button" id="InputUltimate" /><br />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+        <input value="Submit" type="submit">
+            </td>
+        </tr>
+        </table>
+        </form>
+    </div>

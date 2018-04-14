@@ -1,0 +1,901 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <div class="Options" >You can Search by </div>
+            <!--choose character by job-->
+            <div id="boxes">
+                <select>
+                <option selected disabled>Type</option>
+                <option>All</option>
+                <option>Offense</option>
+                <option>Defense</option>
+                <option>Tank</option>
+                <option>Support</option>
+            </select>
+                <input value="Submit" type="submit">
+            <div class="Options">OR</div>
+               <!-- search by name-->
+              <select>
+                <option selected disabled>Name</option>
+                <option>Ana</option>
+                <option>Bastion</option>
+                <option>Doomfist</option>                
+                <option>Dva</option>
+                <option>Genji</option>
+                <option>Hazon</option>
+                <option>Junkrat</option>
+                <option>Lucio</option>
+                <option>McCree</option>
+                <option>Mei</option>
+                <option>Mercy</option>
+                <option>Moira</option>
+                <option>Orisa</option>
+                <option>Pharah</option>
+                <option>ReinHardt</option>
+                <option>Reaper</option>
+                <option>Roadhog</option>
+                <option>Solider 76</option>
+                <option>Sombra</option>
+                <option>Symmetra</option>
+                <option>Tornbjorn</option>
+                <option>Tracer</option>
+                <option>WidowMaker</option>
+                <option>Winston</option>
+                <option>Zarya</option>
+                <option>Zenyatta</option>
+            </select>
+            
+            <input value="Submit" type="submit">
+</div>
+<!-- table of info-->
+           <table class="OverWatch">
+               <tr>
+               <td>Name</td><td>type</td><td>passives</td><td>Weapons</td><td>Abilities</td><td>Ultimates</td>
+               </tr>
+               <tr><td><img src="~/Images/Bastion.png" alt="Bastion"/><br />Bastion</td>
+                   <td>Defense</td>
+                   <td><b>Ironclad</b>
+                       <ol>
+                           <li>
+                               Reduces damage taken while transformed.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Recon</b>(via reconfigure ability)
+                       <ol>
+                           <li>
+                                Bastion is fully mobile, outfitted with a submachine gun that fires steady bursts of bullets at medium range.
+                           </li>
+                       </ol>
+                       <b>Sentry</b>(via reconfigure ability)
+                       <ol>
+                           <li>
+                               Bastion is a stationary powerhouse equipped with a gatling gun.dealing damage at short to medium range.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Reconfigure</b>
+                       <ol>
+                           <li>
+                               can transforms between its two primary combat modes to adapt to battlefield conditions. mentioned prior.
+                           </li>
+                       </ol>
+                       <b>Self-Repair</b>
+                       <ol>
+                           <li>
+                                restores its health; it cannot fire weapons while the repair process is in effect.
+                           </li>    
+                       </ol>
+                   </td>
+                   <td><b>Tank</b>
+                       <ol>
+                           <li>
+                               The cannon’s explosive shells demolish targets in a wide blast radius,
+                           </li>
+                       </ol>
+                   </td>
+                  
+               </tr><!--Bastion-->
+               <tr>
+                                   <td><img src="~/Images/doomfist.png" alt="DoomFist."/><br />Doomfist</td>
+                                   <td>Offense</td>
+                                   <td><b>The Best Defense</b>
+                                       <ol>
+                                           <li>
+                                               Doomfist generates temporary personal shields<br /> 
+                                               when he deals ability damage.
+                                           </li>
+
+                                       </ol>
+                                   </td>
+                                   <td><b>Hand Cannon</b>
+                                       <ol>
+                                           <li>short-range burst from the knuckles of his fist.<br /> 
+                                               Its ammunition is automatically regenerated</li>
+                                       </ol>
+                                   </td>
+                                   <td><b>Seismic Slam</b>
+                                       <ol>
+                                           <li>Doomfist leaps forward and smashes into the ground,<br /> 
+                                               knocking nearby enemies toward him.</li>  
+                                       </ol>
+                                           <b>Rising Uppercut</b>
+                                       <ol>
+                                           <li>Doomfist uppercuts enemies in front of him into the air.</li>
+                          
+                                       </ol>
+                                             <b>Rocket Punch</b>
+                                       <ol>
+                                           <li>Doomfist lunges forward and knocks an enemy back</li>
+                                       </ol>
+                                   </td>
+                                   <td><b>Meteor Strike</b>
+                                       <ol>
+                                           <li>
+                                               leaps into the sky, then crashes to the ground,<br /> 
+                                               dealing significant damage.
+                                           </li>
+                                       </ol>
+
+                                   </td>
+                               </tr><!--Doomfist-->
+               <tr><td><img src="~/Images/Genji.png" alt="Genji"/><br /> Genji</td>
+                   <td>Offense</td>
+                   <td><b>Cyber-Agility</b>
+                       <ol>
+                           <li>
+                           Genji can climb walls and perform jumps in mid-air.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Shuriken</b>(Primary Fire)
+                       <ol>
+                           <li>
+                               Genji throws three deadly throwing stars in quick succession.
+                           </li>
+                       </ol>
+                       <b>Fan of Blades</b>(Secondary Fire)
+                       <ol>
+                           <li>
+                                throw three shuriken in a wider spread.
+                           </li>
+                       </ol>
+                   </td>
+                   <td>
+                       <b>Swift Strike</b>
+                       <ol>
+                           <li>
+                               Dashing forward, Genji slashing with his sword<br />while passing through foes in his path
+                           </li>
+                       </ol>
+                       <b>Deflect</b>
+                       <ol>
+                           <li>reflects an oncoming projectile </li>
+                       </ol>
+                   </td>
+                   <td><b>Dragonblade</b>
+                       <ol>
+                           <li>Genji can deliver killing strikes to any targets within his reach.</li>
+                       </ol>
+                   </td>
+               </tr><!--Genji-->
+               <tr><td><img src="~/Images/Pharah.png" alt="Pharah"/><br />Pharah</td>
+                   <td>Offense</td>
+                   <td><b>Hover Jets</b>
+                       <ol>
+                           <li>Pharah lifts herself upward with her jet suit.</li>
+                       </ol>
+                   </td>
+                   <td><b>Rocket Launcher</b>
+                       <ol>
+                           <li>primary weapon launches rockets that deal significant damage in a wide blast radius.</li>
+                       </ol>
+                   </td>
+                   <td><b>Jump Jet</b>
+                       <ol>
+                           <li>Propelled by her suit’s thrusters, Pharah soars high into the air.</li>
+                       </ol>
+                       <b>Concussive Blast</b>
+                       <ol>
+                           <li>
+                               Pharah looses a wrist rocket that knocks back any enemies it strikes.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Barrage</b>
+                       <ol>
+                           <li>directs a continuous assault of mini-rockets to destroy groups of enemies.</li>
+                       </ol>
+                   </td>
+               </tr><!--Pharah-->
+               <tr><td><img src="~/Images/Reaper.png" alt="Reaper"/><br />Reaper</td>
+                   <td>Offense</td>
+                   <td><b>The Reaping</b>
+                       <ol>
+                           <li>
+                               Reaper steals health from his enemies as he damages them
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Hellfire Shotguns</b>
+                       <ol>
+                           <li>Reaper tears enemies apart with twin shotguns.</li>
+                       </ol>
+                   </td>
+                   <td><b>Wraith Form</b>
+                       <ol>
+                           <li>Reaper becomes a shadow for a short period of time.</li>
+                       </ol>
+                       <b>Shadow Step</b>
+                       <ol>
+                           <li>
+                               After marking a destination, Reaper disappears and reappears at that location.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Death Blossom</b>
+                       <ol>
+                           <li>Reaper empties both Hellfire Shotguns at breakneck speed, dealing massive damage</li>
+                       </ol>
+                   </td>
+               </tr><!--Reaper-->
+               <tr><td><img src="~/Images/Sombra.jpg" alt="Sombra"/><br />Sombra</td>
+                   <td>Offense</td>
+                   <td><b>Opportunist</b>
+                       <ol>
+                           <li>detects critically injured enemies through walls.</li>
+                       </ol>
+                   </td>
+                   <td><b>Machine Pistol</b>
+                       <ol>
+                           <li>
+                                fully-automatic machine pistol 
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Hack</b>
+                       <ol>
+                           <li>
+                                hacks enemies to temporarily stop them from using their abilities.
+                           </li>
+                           <li>
+                                hacks first aid kits to make them temporarily useless to her opponents
+                           </li>
+                       </ol>
+                       <b>Thermoptic Camo</b>
+                       <ol>
+                           <li>
+                               Sombra becomes invisible for a short period of time
+
+                           </li>
+                       </ol>
+                       <b>Translocator</b>
+                       <ol>
+                           <li>
+                               Sombra tosses out a translocator beacon. She can instantly return to the beacon’s location while it is active 
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>EMP</b>
+                       <ol>
+                           <li> 
+                               destroying enemy barriers and shields and
+                               hacks all opponents caught in the blast.
+                           </li>
+                       </ol>
+                   </td>
+               </tr><!--Sombra-->
+               <tr><td><img src="~/Images/McCree.png" alt="McCree"/><br />McCree</td>
+                   <td>Offense</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Peacekeeper</b>
+                       <ol>
+                           <li>
+                               standard Six-Shooter 
+                           </li>
+                       </ol>
+                       <b>Fan the Hammer</b>(Secondary Fire) 
+                   <ol>
+                       <li>
+                           McCree can fan the Peacekeeper’s hammer to swiftly unload the entire cylinder.
+                       </li>
+                   </ol>
+                       </td>
+                   <td><b>Combat Roll</b>
+                       <ol>
+                           <li>
+                                dives in the direction he’s moving, <br /> reloading his Peacekeeper in the process.
+                           </li>
+                       </ol>
+                       <b>Flashbang</b>
+                       <ol>
+                           <li>
+                               The blast staggers enemies in a small radius.
+                           </li>
+                       </ol>
+                   </td>
+                   <td>
+                       <b>Deadeye</b>
+                       <ol>
+                           <li>
+                               he shoots every enemy in his line of sight. The weaker his targets are <br />the faster he’ll line up a killshot.
+                           </li>
+                       </ol>
+                   </td>
+               </tr><!--McCree-->
+               <tr><td><img src="~/Images/Solider.png" alt="Soldier"/><br />Soldier 76</td>
+                   <td>Offense</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Heavy Pulse Rifle</b>
+                       <ol>
+                           <li>
+                               A rifle that remains particularly steady while unloading fully-automatic pulse fire.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Helix Rockets</b>
+                       <ol>
+                           <li>
+                               Tiny spiraling rockets explodes in a small radius.
+                           </li>
+                       </ol>
+                       <b>Sprint</b>
+                       <ol>
+                           <li>
+                               Gains a speed boost in any direction. 
+                           </li>
+                       </ol>
+                       <b>Biotic Field</b>
+                       <ol>
+                           <li>
+                               Its energy projection restores heals anyone within the radius.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Tactical Visor</b>
+                       <ol>
+                           <li>
+                               A pinpoint targeting visor “locks” his aim on the threat closest to his crosshairs.
+                           </li>
+                       </ol>
+                   </td>
+               </tr><!--Soldier -->
+               <tr><td><img src="~/Images/Tracer.jpg" alt="Tracer"/><br />Tracer</td>
+                   <td>Offense</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Pulse Pistols</b>
+                       <ol>
+                           <li>
+                               rapidily fires both of her twin pistols.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Blink</b>
+                       <ol>
+                           <li>
+                               Tracer zips through space in the direction she’s moving, and reappears several yards away.
+                           </li>
+                       </ol>
+                       <b>Recall</b>
+                       <ol>
+                           <li>
+                               Moves backward in time, returning her Hp, ammo and position precisely where they were a few seconds before.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Pulse Bomb</b>
+                       <ol>
+                           <li>
+                               lobs a large bomb that adheres to any surface or unfortunate opponent it lands on. 
+                           </li>
+                       </ol>
+                   </td>
+               </tr><!--Tracer-->
+               <tr><td><img src="~/Images/Mei.png" alt="Mei"/><br />Mei</td>
+                   <td>Defense</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Endothermic Blaster</b>(Primary Fire)
+                       <ol>
+                           <li> a concentrated, short-range stream of frost that damages, slows, and ultimately freezes enemies in place.</li>
+                       </ol>
+                       <b>Endothermic Blaster</b>(Secondary Fire)
+                       <ol>
+                           <li>
+                               Mei can also use her blaster to shoot icicle-like projectiles at medium range.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Cryo-Freeze</b>
+                       <ol>
+                           <li>instantly surrounds herself with a block of thick ice. She heals and ignores damage while encased,</li>
+                       </ol>
+                       <b>Ice Wall</b>
+                       <ol>
+                           <li>an enormous ice wall that obstructs lines of sight, stops movement, and blocks attacks.</li>
+                       </ol>
+                   </td>
+                   <td><b>Blizzard</b>
+                       <ol>
+                           <li>
+                                a drone that emits gusts of wind and snow in a wide area.
+                           </li>
+                       </ol>
+                   </td>
+               </tr> <!--Mei--> 
+               <tr><td><img src="~/Images/Widowmaker.png" alt="Widowmaker"/><br />Widowmaker</td>
+                   <td>Defense</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Widow's Kiss: Sniper</b>
+                       <ol>
+                           <li>
+                               Widowmaker’s versatile sniper rifle is ideal for scope-aimed shots at distant targets.
+                           </li>
+                       </ol>
+                       <b>Widow's Kiss: Assault</b>
+                       <ol>
+                           <li>
+                               Should targets close to medium range, the rifle can also be fired in fully-automatic mode.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Grappling Hook</b>
+                       <ol>
+                           <li>
+                               when the hook connects with a scalable surface it allows her to expand her view of the battlefield and evade or flank targets.
+                           </li>
+                       </ol>
+                       <b>Venom Mine</b>
+                       <ol>
+                           <li> When a target wanders within range of the mine’s motion trigger, it explodes, delivering poison gas.</li>
+                       </ol>
+                   </td>
+                   <td><b>Infra-Sight</b>
+                       <ol>
+                           <li>allows her to see her targets through walls.its also shared with her allies.</li>
+                       </ol>
+                   </td>
+               </tr><!--Widowmaker-->                 
+               <tr><td><img src="~/Images/Hanzo.jpg" alt="Hanzo"/><br />Hanzo</td>
+                   <td>Defense</td>
+                   <td><b>Wall Climb</b>
+                       <ol>
+                           <li>Jump at walls to climb up them.</li>
+                       </ol>
+                   </td>
+                   <td><b>Storm Bow</b>
+                       <ol>
+                           <li>Hanzo's primary weapon of choice</li>
+                       </ol>
+                   </td>
+                   <td><b>Sonic Arrow</b>
+                       <ol>
+                           <li>an arrow that contains a sonar tracking device. Any enemy within its detection radius is visibly marked</li>
+                       </ol>
+                       <b>Scatter Arrow</b>
+                       <ol>
+                           <li>a fragmenting arrow that ricochets off walls and objects and can strike multiple targets at once.</li>
+                       </ol>
+                   </td>
+                   <td><b>Dragonstrike</b>
+                       <ol>
+                           <li>summons a Spirit Dragon which travels through the air in a line. </li>
+                       </ol>
+                   </td>
+               </tr><!--Hanzo-->
+               <tr><td><img src="~/Images/Junkrat.png" alt="Junkrat"/><br />Junkrat</td>
+                   <td>Defense</td>
+                   <td><b>Total Mayhem</b>
+                       <ol>
+                           <li>If killed, JunkRat drops several live grenades.</li>
+                       </ol>
+                   </td>
+                   <td><b>Frag Launcher</b>
+                       <ol>
+                           <li>lobs grenades a significant distance. They bounce to reach their destination</li>
+                       </ol>
+                   </td>
+                   <td><b>Concussion Mine</b>
+                       <ol>
+                           <li>Junkrat can trigger it to damage enemies and send them flying.</li>
+                       </ol>
+                       <b>Steel Trap</b>
+                       <ol>
+                           <li>
+                               A metal-toothed trap. Should an enemy wander too close to the trap, it clamps on, injuring and immobilizing them.</li>
+                       </ol>
+                   </td>
+                   <td><b>RIP-Tire</b>
+                       <ol>
+                           <li>
+                               revs up a motorized tire bomb and sends it rolling across the battlefield, He can remotely detonate the RIP-Tire to deal serious damage to enemies caught in the blast.</li>
+                       </ol>
+                   </td>
+               </tr><!--Junkrat-->
+               <tr><td><img src="~/Images/Torbjorn.png" alt="Torbjorn"/><br />Torbjorn</td>
+                   <td>Defense</td>
+                   <td><b>Scrap Collector</b>
+                       <ol>
+                           <li>Collect scrap to gain resources.</li>
+                       </ol>
+                   </td>
+                   <td><b>Rivet Gun</b>(Primary Fire)
+                       <ol>
+                           <li>Torbjörn fires rivets at long range.</li>
+                       </ol>
+                       <b>Rivet Gun</b>(Seconday Fire)
+                       <ol>
+                           <li>ejects molten metal from his gun in a short, close-range burst.</li>
+                       </ol>
+                       <b>Forge Hammer</b>
+                       <ol>
+                           <li>uses his multipurpose hammer to build, upgrade and repair turrets.</li>
+                       </ol>
+                   </td>
+                   <td><b>Build Turret</b>
+                       <ol>
+                           <li>Torbjörn constructs an enemy-tracking autocannon. </li>
+                       </ol>
+                       <b>Armor Pack</b>
+                       <ol>
+                           <li>
+                               deploys an armor upgrade; either he or his allies can pick it up to absorb some damage.
+                           </li>
+                       </ol>
+                   </td>
+                   <td><b>Molten Core</b>
+                       <ol>
+                           <li>
+                               Torbjörn gains a significant amount of armor and scrap. He also attacks far faster than normal.
+                           </li>
+                       </ol>
+                   </td>
+               </tr><!--Torbjorn-->
+               <tr><td><img src="~/Images/DvaMech.png" alt="Dva"/><br />DVA</td>
+                   <td>Tank</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Fusion Cannons</b>
+                       <ol>
+                           <li>twin short-range rotating cannons. They lay down continuous, high-damage fire without needing to reload.</li>
+                       </ol>
+                       <b>Light Gun</b>
+                       <ol>
+                           <li>D.Va can continue to fight while outside of her mech with a mid-range pistol.</li>
+                       </ol>
+                   </td>
+                   <td><b>Defense Matrix></b>
+                       <ol>
+                           <li>A forward-facing barrier that blocks incoming projectiles.</li>
+                       </ol>
+                       <b>Boosters</b>
+                       <ol>
+                           <li>D.Va’s mech Thrusts into the air. or barrel through her enemies.</li>
+                       </ol>
+                       <b>Micro Missiles</b>
+                       <ol>
+                           <li>a volley of small explosive rockets.</li>
+                       </ol>
+                   </td>
+                   <td><b>Self-Destruct</b>
+                       <ol>
+                           <li>D.Va ejects from her mech and sets its reactor to explode, dealing massive damage to nearby opponents.</li>
+                       </ol>
+                       <b>Call Mech</b>
+                       <ol>
+                           <li>If her mcech was destroyed, D.Va can call down a fresh mech and return to fight at full power.</li>
+                       </ol>
+                   </td>
+               </tr><!--DVA-->
+               <tr><td><img src="~/Images/Orisa.png" alt="Orisa"/><br />Orisa</td>
+                   <td>Tank</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Fusion Driver</b>
+                       <ol><li>automatic projectile cannon delivers sustained damage.</li></ol>
+                   </td>
+                   <td><b>Halt!</b>
+                       <ol><li>Launch a graviton charge.The sphere slows and pulls nearby enemies to it.</li></ol>
+                       <b>Fortify</b>
+                       <ol>
+                           <li>Orisa temporarily reduces damage she takes and cannot be affected by movement-impairing effects.</li>
+                       </ol>
+                       <b>Protective Barrier</b>
+                       <ol>
+                           <li>throws out a barrier that protects her and her allies.</li>
+                       </ol>
+                   </td>
+                   <td><b>Supercharger</b>
+                       <ol><li>increase damage inflicted by allies within her line of sight.</li></ol>
+                   </td>
+               </tr><!--orissa-->
+               <tr><td><img src="~/Images/Reinhardt.png" alt="Reinhardt"/><br />Reinhardt</td>
+                   <td>Tank</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Rocket Hammer</b>
+                       <ol>
+                           <li> an exemplary melee weapon, deals punishing damage in a wide arc.</li>
+                       </ol>
+                   </td>
+                   <td><b>Barrier Field</b>
+                       <ol>
+                           <li>an energy shield that absorbs damage before it is destroyed. </li>
+                       </ol>
+                       <b>Charge</b>
+                       <ol>
+                           <li>charges in a straight line, push back or grab any enemies in his path.</li>
+                       </ol>
+                       <b>Fire Strike</b>
+                       <ol>
+                           <li>Reinhardt slings a flaming projectile which  damages any enemies it touches.</li>
+                       </ol>
+                   </td>
+                   <td> <b>Earthshatter</b>
+                       <ol>
+                           <li>slams his rocket hammer into the ground, knocking down and damaging all enemies in front of him.</li>
+                       </ol>
+
+                   </td>
+               </tr><!--ReinHardt-->
+               <tr><td><img src="~/Images/Roadhog.png" alt="Roadhog"/><br />Roadhog</td>
+                   <td>Tank</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Scrap Gun</b>(primary fire)
+                       <ol>
+                           <li>fires short-range blasts of shrapnel with a wide spread.</li>
+                       </ol>
+                       <b>Scrap Gun</b>(Secondary fire)
+                       <ol>
+                           <li>it can launch a shrapnel ball that detonates farther away,</li>
+                       </ol>
+                   </td>
+                   <td><b>Take a Breather</b>
+                       <ol>
+                           <li>restores a chunk of his health over a brief period of time.</li>
+                       </ol>
+                       <b>Chain Hook</b>
+                       <ol>
+                           <li>throws a hook at a target; if it catches, it pulls them into close range.</li>
+                       </ol>
+                   </td>
+                   <td><b>Whole Hog</b>
+                       <ol>
+                           <li>he can crank out a stream of shrapnel that knocks back and damages enemies.</li>
+                       </ol>
+                   </td>
+               </tr><!--RoadHog-->
+               <tr><td><img src="~/Images/Winston.png" alt="Winston"/><br />Winston</td>
+                   <td>Tank</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Tesla Cannon</b>
+                       <ol>
+                           <li>a short-range electric barrage.</li>
+                       </ol>
+                   </td>
+                   <td><b>Jump Pack</b>
+                       <ol>
+                           <li>Lunges through the air, dealing damage and staggering nearby enemies when he lands.</li>
+                       </ol>
+                       <b>Barrier Projector</b>
+                       <ol>
+                           <li>extends a dome that absorbs damage until it's destroyed.</li>
+                       </ol>
+                   </td>
+                   <td><b>Primal Rage</b>
+                       <ol>
+                           <li>Adds a health,melee and cooldown boost temporarily,Tesla Cannon cant be used in this form</li>
+                       </ol>
+                   </td>
+               </tr><!--Winston-->
+               <tr><td><img src="~/Images/Zarya.png" alt="Zarya"/><br />Zarya</td>
+                   <td>Tank</td>
+                   <td><b>Energy</b>
+                       <ol>
+                           <li>Damage blocked by the Particle Barrier abilty increases Particle Cannon damage</li>
+                       </ol>
+                   </td>
+                   <td><b>Particle Cannon</b>(Primary Fire)
+                       <ol>
+                           <li>unleashes a short-range beam of destructive energy.</li>
+                       </ol>
+                       <b>Particle Cannon</b>(Secondary Fire)
+                       <ol>
+                           <li>lobs an explosive charge to strike multiple opponents.</li>
+                       </ol>
+                   </td>
+                   <td><b>Particle Barrier</b>
+                       <ol>
+                           <li>A barrier against incoming attacks, redirecting their energy to enhance her weapon’s damage</li>
+                       </ol>
+                       <b>Projected Barrier</b>
+                       <ol>
+                           <li> surrounds one teammate with an energy barrier that also boosts the power of her Particle Cannon.</li>
+                       </ol>
+                   </td>
+                   <td><b>Graviton Surge</b>
+                       <ol>
+                           <li>a gravity bomb that draws in enemy combatants and deals damage while they’re trapped.</li>
+                       </ol>
+                   </td>
+               </tr><!--Zarya-->
+               <tr><td><img src="~/Images/Ana.png" alt="Ana"/><br />Ana</td>
+                   <td>Support</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Biotic Rifle</b>
+                       <ol>
+                           <li>A Scoped Rifle that Shoots darts that can restore health to her allies or deal ongoing damage to her enemies.</li>
+                       </ol>
+                   </td>
+                   <td><b>Sleep Dart</b>
+                       <ol>
+                           <li>fires a dart from her sidearm, rendering an enemy unconscious (though any damage will rouse them).</li>
+                       </ol>
+                       <b>Biotic Grenade</b>
+                       <ol>
+                           <li>biotic bomb that deals damage to enemies and heals allies in a small area of effect.</li>
+                       </ol>
+                   </td>
+                   <td><b>Nano Boost</b>
+                       <ol>
+                           <li>hits one of her allies with a combat boost, they deal more damage and take less damage from enemies attacks</li>
+                       </ol>
+                   </td>
+               </tr><!--Ana-->
+               <tr><td><img src="~/Images/Lucio.png" alt="Lucio"/><br />Lucio</td>
+                   <td>Support</td>
+                   <td><b>Wall Ride</b>
+                       <ol>
+                           <li>Jump onto a wall to ride along it.</li>
+                       </ol>
+                   </td>
+                   <td><b>Sonic Amplifier</b>(Primary Fire)
+                       <ol>
+                           <li>Hits his enemies with sonic projectiles.</li>
+                       </ol>
+                       <b>Soundwave</b>(secondary Fire)
+                       <ol>
+                           <li>can knock his enemies back with a blast of sound.</li>
+                       </ol>
+                   </td>
+                   <td><b>Crossfade</b>
+                       <ol>
+                           <li>Switch between buff types one amplifies movement speed, while the other regenerates health</li>
+                       </ol>
+                       <b>Amp It Up</b>
+                       <ol>
+                           <li>boosts the Crossfade ability</li>
+                       </ol>
+                   </td>
+                   <td><b>Sound Barrier</b>
+                       <ol>
+                           <li>briefly providing him and nearby allies with personal shields.</li>
+                       </ol>
+                   </td>
+               </tr><!--lucio-->
+               <tr><td><img src="~/Images/Moira.png" alt="Moira"/><br />Moira</td>
+                   <td>Support</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Biotic Grasp</b>(primary Fire)
+                       <ol>
+                           <li>Moira expends biotic energy to heal allies in front of her.</li>
+                       </ol>
+                           <b>Biotic Grasp</b>(secondary Fire)
+                       <ol>    
+                       <li> a long-range beam weapon that saps enemies’ health, healing Moira and replenishing her biotic energy.</li>
+                       </ol>
+                   </td>
+                   <td><b>Biotic Orb</b>
+                       <ol>
+                           <li>choose between a regeneration effect or a decay effect.</li>
+                       </ol>
+                       <b>Fade</b>
+                       <ol>
+                           <li>eleports a short distance while invulnerable to damage.</li>
+                       </ol>
+                   </td>
+                   <td><b>Coalescence</b>
+                       <ol>
+                           <li> long-range beam that both heals allies and bypasses barriers to damage her enemies.</li>
+                       </ol>
+                   </td>
+               </tr><!--Moira-->
+               <tr><td><img src="~/Images/Symmetra.png" alt="Symmetra"/><br />Symmetra</td>
+                   <td>Support</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Photon Projector</b>(Primary Fire)
+                       <ol>
+                           <li>a short-range beam that homes in on a nearby enemy,</li>
+                       </ol>
+                       <b>Energy Ball</b>(Secondary Fire)
+                       <ol>
+                           <li>release a charged energy ball that deals high damage.</li>
+                       </ol>
+                   </td>
+                   <td><b>Sentry Turret</b>
+                       <ol>
+                           <li>a small turret that automatically fires speed-reducing blasts</li>
+                       </ol>
+                       <b>Photon Barrier</b>
+                       <ol>
+                           <li>a moving barrier that absorbs damage as it travels forward.</li>
+                       </ol>
+                   </td>
+                   <td><b>Teleporter</b>
+                       <ol>
+                           <li> Places a teleporter at her current location, and connects it to a teleporter entry pad at her team’s starting point.</li>
+                       </ol>
+                       <b>Shield Generator</b>
+                       <ol>
+                           <li>a wide-radius generator that provides increased shielding to her entire team.</li>
+                       </ol>
+                   </td>
+               </tr><!--Symmetra-->
+               <tr><td><img src="~/Images/Zenyatta.png" alt="Zenatta"/><br />Zenyatta</td>
+                   <td>Support</td>
+                   <td><b>N/A</b></td>
+                   <td><b>Orb of Destruction</b>(Primary Fire)
+                       <ol>
+                           <li> Shoots a destructive orb dealing damage to enemys.</li>
+                       </ol>
+                       <b>Orb Volley</b>(Secondary Fire)
+                       <ol>
+                           <li>Shoots his orbs in a rapid-fire volley.</li>
+                       </ol>
+                   </td>
+                   <td><b>Orb of Harmony</b>
+                       <ol>
+                           <li>So long as Zenyatta maintains line of sight, the orb slowly restores health to his ally</li>
+                       </ol>
+                       <b>Orb of Discord</b>
+                       <ol>
+                           <li> as long as Zenyatta maintains line of sight. Only one opponent can suffer the orb's effects at a time.</li>
+                       </ol>
+                   </td>
+                   <td><b>Transcendence</b>
+                       <ol>
+                           <li>is immune to damage and automatically restores his health and that of nearby allies.</li>
+                       </ol>
+                   </td>
+               </tr><!--Zenatta-->
+               <tr><td><img src="~/Images/Mercy.png" alt="Mercy"/><br />Mercy</td>
+                   <td>Support</td>
+                   <td><b>Regeneration</b>
+                       <ol>
+                           <li>automatically heals over time.</li>
+                       </ol>
+                       <b>Angelic Descent</b>
+                           <ol>
+                               <li> Mercy slows the speed of her descent from great heights.</li>
+                           </ol>
+                   </td>
+                   <td><b>Caduceus Staff</b>
+                       <ol>
+                           <li> she can either restore one ally’s health or increase the amount of damage they deal.</li>
+                       </ol>
+                       <b>Caduceus Blaster</b>
+                       <ol>
+                           <li>hoots a round from her sidearm. It's best reserved for emergency personal defense.</li>
+                       </ol>
+                   </td>
+                   <td><b>Guardian Angel</b>
+                       <ol>
+                           <li>flies towards a targeted ally</li>
+                       </ol>
+                       <b>Resurrect</b>
+                       <ol>
+                           <li> brings a dead ally back into the fight with full health.</li>
+                       </ol>
+                   </td>
+                   <td><b>Valkyrie</b>
+                       <ol>
+                           <li>Gain the ability to fly, abilities are also enhanced.</li>
+                       </ol>
+                   </td> 
+                   </tr><!--Mercy-->      
+           </table>
+        </div>
+    </section>
+}
